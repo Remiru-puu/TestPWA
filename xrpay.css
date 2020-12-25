@@ -1,0 +1,37 @@
+@charset "Shift_JIS";
+/*============================================
+フッタ
+============================================*/
+div#footer{
+	height:180px; background-color:#eeeeee; font-weight:bold;
+}
+li#menu01,li#menu02,li#menu03,li#menu04{
+	float:left;			/*リスト項目を横に並べる*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	list-style-type:none;		/*リストマーカー無しにする*/
+	background-repeat:no-repeat; 	/*背景画像を繰り返さない*/	
+}
+
+/*ボタン01～05にはそれぞれ異なる背景画像を指定する*/
+li#menu01 {
+	width:180px; height:180px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("assets/img/home.png");	/*背景画像*/
+}
+li#menu02 {
+	width:180px; height:180px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("assets/img/card.png");	/*背景画像*/
+}
+li#menu03 {
+	width:180px; height:180px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("assets/img/cert.png");	/*背景画像*/
+}
+li#menu04 {
+	width:180px; height:180px;	/*背景画像に合わせたサイズ指定*/
+	background-image:url("assets/img/account.png");	/*背景画像*/
+}
+ul#menu a {
+	display:block;				/*リンクをブロック表示にする*/
+	height:42px; padding-top:4px; text-align:center;
+	text-decoration:none; 			/*リンクの下線を無くす*/
+	font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+}

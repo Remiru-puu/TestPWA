@@ -6,15 +6,15 @@
 　　<!-- vue.js　-->
     <script src="https://TestPWA/npm/vue"></script>
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="xrpay.css">
     <title>PWA Sample</title>
   </head>
   <body>
     <div id="app">
-        <p>{{ message }}</p>
+        <p>Hello vue!</p>
         <button v-on:click="reverseMessage">Reverse Message</button>
      </div>
     <script>
-    <!-- service workerの登録関係 -->
     if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/assets/js/service_worker.js').then(function(registration) {
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
@@ -22,7 +22,7 @@
         console.log('ServiceWorker registration failed: ', err);
     });
     }
-    <!-- vue.jsの設定関係 -->
+
     var app = new Vue({
       el: '#app',
       data: {
@@ -35,5 +35,11 @@
       }
     });
     </script>
+    <div id="footer">
+        <li id="menu01"><a href="xxx.html">Home</a></li>
+        <li id="menu02"><a href="xxx.html">card</a></li>
+        <li id="menu03"><a href="xxx.html">cert</a></li>
+        <li id="menu04"><a href="xxx.html">acount</a></li>
+    </div>
   </body>
 </html>
